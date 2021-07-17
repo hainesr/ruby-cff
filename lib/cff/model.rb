@@ -44,6 +44,8 @@ module CFF
   # * `version`
   class Model < ModelPart
 
+    include Validatable
+
     ALLOWED_FIELDS = [
       'abstract', 'authors', 'cff-version', 'contact', 'commit',
       'date-released', 'doi', 'keywords', 'license', 'license-url', 'message',

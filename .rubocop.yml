@@ -22,6 +22,12 @@ Lint/UselessAccessModifier:
 Style/PreferredHashMethods:
   EnforcedStyle: verbose
 
+# Allow a non-standard error type.
+Style/RaiseArgs:
+  AllowedCompactTypes:
+    - ValidationError
+    - CFF::ValidationError
+
 # Enforce empty lines at the beginning of classes.
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: beginning_only
