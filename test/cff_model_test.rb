@@ -86,7 +86,7 @@ class CFFModelTest < Minitest::Test
     m = ::CFF::Model.new('title')
     [1.0, '1.0.0'].each do |version|
       m.version = version
-      assert_equal(version.to_s, m.version)
+      assert_equal(version, m.version)
 
       y = m.to_yaml
       assert_includes(y, "version: #{version}")

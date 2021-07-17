@@ -89,11 +89,6 @@ module CFF
       @fields['date-released'] = date
     end
 
-    # Set the `version` field, converting to string if necessary.
-    def version=(version) # :nodoc:
-      @fields['version'] = version.to_s
-    end
-
     def to_yaml # :nodoc:
       YAML.dump fields, line_width: -1, indentation: 2
     end
