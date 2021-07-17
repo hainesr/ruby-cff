@@ -28,7 +28,7 @@ module CFF
   # simple fields are (with defaults in parentheses):
   #
   # * `abstract`
-  # * `cff_version` (1.0.3)
+  # * `cff_version`
   # * `commit`
   # * `date_released` - *Note:* returns a `Date` object
   # * `doi`

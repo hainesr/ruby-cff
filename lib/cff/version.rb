@@ -18,5 +18,5 @@
 module CFF
   # :nodoc:
   VERSION = '0.6.0'
-  DEFAULT_SPEC_VERSION = '1.0.3'
+  DEFAULT_SPEC_VERSION = '1.2.0'
 end
