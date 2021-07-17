@@ -15,7 +15,10 @@
 # limitations under the License.
 
 require 'date'
+require 'json'
 require 'yaml'
+
+require 'json_schema'
 require 'language_list'
 require 'spdx-licenses'
 
@@ -37,4 +40,7 @@ require 'cff/formatter/bibtex_formatter'
 # See the [CITATION.cff documentation](https://citation-file-format.github.io/)
 # for more details.
 module CFF
+  SCHEMA_PATH = ::File.join(__dir__, 'schema', '1.2.0.json') # :nodoc:
+  SCHEMA_FILE = JSON.parse(::File.read(SCHEMA_PATH))         # :nodoc:
+  SCHEMA = JsonSchema.parse!(SCHEMA_FILE)                    # :nodoc:
 end

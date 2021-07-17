@@ -37,6 +37,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.6'
 
+  spec.add_runtime_dependency 'json_schema', '~> 0.21.0'
   spec.add_runtime_dependency 'language_list', '~> 1.2'
   spec.add_runtime_dependency 'spdx-licenses', '~> 1.3'
 
